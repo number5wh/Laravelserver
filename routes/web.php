@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', 'StaticsController@home');
-Route::get('/help', 'StaticsController@help');
-Route::get('/about', 'StaticsController@about');
+Route::get('/', 'StaticsController@home')->name('home');
+Route::get('/help', 'StaticsController@help')->name('help');
+Route::get('/about', 'StaticsController@about')->name('about');
+
+Route::get('signup', 'UsersController@create')->name('signup');
