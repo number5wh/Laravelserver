@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'StaticsController@home');
+Route::get('/help', 'StaticsController@help');
+Route::get('/about', 'StaticsController@about');
